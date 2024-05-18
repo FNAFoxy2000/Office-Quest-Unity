@@ -1,0 +1,930 @@
+fileFormatVersion: 2
+guid: 146401e249e3d90409efb3d81127500b
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: -4641825362764910347
+    second: Foxy--CPU(Lurch)
+  - first:
+      74: 7795971027104277345
+    second: Foxy--Decloaked
+  - first:
+      74: -1964604677231668996
+    second: Foxy--Shutdown
+  - first:
+      74: 9030354820309625645
+    second: Foxy--Glimpse (1)
+  - first:
+      74: -7511869782527417833
+    second: Foxy--CPU(Shutdown)
+  - first:
+      74: 5627257494718541983
+    second: Foxy--CPU(Shutdown)_FinalPose
+  - first:
+      74: -4012867140443538609
+    second: Foxy--CPU(Revive)
+  - first:
+      74: 2423074749117817167
+    second: Foxy--Jumpscare
+  - first:
+      74: 7107630762564138552
+    second: Foxy--Glimpse (2)
+  - first:
+      74: 6629773548637932667
+    second: Foxy--ShutdownFinalPose
+  - first:
+      74: 1926398428793158242
+    second: Foxy--ChargePose
+  - first:
+      74: -7059345982618141902
+    second: Foxy--Idle
+  - first:
+      74: -5885089939121604152
+    second: Foxy--Shocked
+  - first:
+      74: -3216726223263846610
+    second: Foxy--Haywire
+  - first:
+      74: -8463931001052092737
+    second: Foxy--Charge
+  - first:
+      74: -2611572182688362034
+    second: Foxy--Glimpse
+  - first:
+      74: -2124853784978317958
+    second: Foxy--JumpscareFinalPose
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Foxy_Body
+    second: {fileID: 2100000, guid: 2cc71a39c0e0028438086aeca12fa735, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Foxy_Endo
+    second: {fileID: 2100000, guid: 309a6eb643c17c346b1b864ba9257dca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Foxy_Eyes
+    second: {fileID: 2100000, guid: b72f7bab17a44734bb43f47358dee7f5, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 2
+    materialSearch: 2
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Foxy--CPU(Lurch)
+      takeName: Foxy--CPU(Lurch)
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--Decloaked
+      takeName: Foxy--Decloaked
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--Shutdown
+      takeName: Foxy--Shutdown
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--Glimpse
+      takeName: Foxy--Glimpse (1)
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--CPU(Shutdown)
+      takeName: Foxy--CPU(Shutdown)
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--CPU(Shutdown)_FinalPose
+      takeName: Foxy--CPU(Shutdown)_FinalPose
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--CPU(Revive)
+      takeName: Foxy--CPU(Revive)
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--Jumpscare
+      takeName: Foxy--Jumpscare
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 15.070001
+    - serializedVersion: 16
+      name: Foxy--Glimpse (1)
+      takeName: Foxy--Glimpse (2)
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--ShutdownFinalPose
+      takeName: Foxy--ShutdownFinalPose
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--ChargePose
+      takeName: Foxy--ChargePose
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--Idle
+      takeName: Foxy--Idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 469
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--Shocked
+      takeName: Foxy--Shocked
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 469
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--Haywire
+      takeName: Foxy--Haywire
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 469
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--Charge
+      takeName: Foxy--Charge
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 8
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--Glimpse (2)
+      takeName: Foxy--Glimpse
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 469
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foxy--JumpscareFinalPose
+      takeName: Foxy--JumpscareFinalPose
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 469
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 80
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Foxy(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxy
+      parentName: Foxy(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_Geo
+      parentName: Foxy
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Transform_Bn
+      parentName: Foxy
+      position: {x: -0, y: -0.0072000013, z: -0.016000003}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root_Bn
+      parentName: Transform_Bn
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyePlane
+      parentName: Root_Bn
+      position: {x: -0, y: 0, z: -0.008000001}
+      rotation: {x: -6.1232336e-17, y: 1, z: 6.1232336e-17, w: -0.00000004371139}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AudioEmitter
+      parentName: Root_Bn
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hip_Bn
+      parentName: Root_Bn
+      position: {x: 0, y: 0.014054506, z: 0.015992736}
+      rotation: {x: -1.8626452e-10, y: -1.2265037e-19, z: 6.5847416e-10, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: L_Leg_01_Bn
+      parentName: Hip_Bn
+      position: {x: -0.00071644236, y: -0.00071412674, z: 0.0000072659673}
+      rotation: {x: -0.0002661107, y: 0.00026706365, z: 0.7071062, w: 0.7071073}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: L_Leg_02_Bn
+      parentName: L_Leg_01_Bn
+      position: {x: -0.0027111513, y: -5.1159086e-18, z: 2.2737367e-18}
+      rotation: {x: 0.0000000059517333, y: -0.009478799, z: -0.000000013815566, w: 0.9999551}
+      scale: {x: 0.9999997, y: 1, z: 1.0000004}
+    - name: L_Leg_03_Bn
+      parentName: L_Leg_02_Bn
+      position: {x: -0.0027232608, y: -1.1368683e-18, z: -1.1368681e-17}
+      rotation: {x: -0.00000068668265, y: -0.000000010244547, z: -0.0000006791051, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: R_Leg_01_Bn
+      parentName: Hip_Bn
+      position: {x: 0.00071644236, y: -0.00071412855, z: 0.0000072662847}
+      rotation: {x: 0.7071073, y: -0.7071062, z: 0.00026659586, w: 0.00026563447}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000004}
+    - name: R_Leg_02_Bn
+      parentName: R_Leg_01_Bn
+      position: {x: 0.0027111524, y: 1.1368683e-18, z: 0}
+      rotation: {x: 0.0000000060535967, y: -0.009477526, z: -0, w: 0.9999551}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: R_Leg_03_Bn
+      parentName: R_Leg_02_Bn
+      position: {x: 0.002723259, y: 5.684342e-19, z: -0.0000000010046927}
+      rotation: {x: 0.0000006292011, y: 0.0000000018626451, z: -0.0000024498638, w: -1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000004}
+    - name: Spine_Bn
+      parentName: Hip_Bn
+      position: {x: -0, y: 0.00012389237, z: 0.00002824071}
+      rotation: {x: 1.8626452e-10, y: -5.7123904e-19, z: 0.0000000030668161, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: Spine_Lightning
+      parentName: Spine_Bn
+      position: {x: 1.1641601e-11, y: 0.0014560001, z: 0.00034400006}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.36894682, y: 0.5253369, z: 0.34281337}
+    - name: Lightning
+      parentName: Spine_Lightning
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Clavicle_Bn
+      parentName: Spine_Bn
+      position: {x: -0.00024834726, y: 0.0026927264, z: -0.00002218938}
+      rotation: {x: 0.9999335, y: -0.0011389985, z: -0.011476078, w: 0.000013084151}
+      scale: {x: 1, y: 1.0000007, z: 1.0000004}
+    - name: L_Arm_01_Bn
+      parentName: L_Clavicle_Bn
+      position: {x: -0.0015590963, y: 0.0000030989338, z: 0.000034250108}
+      rotation: {x: -0.000000024345354, y: -9.0359364e-10, z: -0.000000012223609, w: 1}
+      scale: {x: 1.0000004, y: 0.9999998, z: 1.0000001}
+    - name: L_Arm_02_Bn
+      parentName: L_Arm_01_Bn
+      position: {x: -0.0019435878, y: 3.4106055e-18, z: 0}
+      rotation: {x: 0.00033057225, y: 0.061452612, z: 0.008255266, w: 0.99807584}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.99999976}
+    - name: L_Arm_03_Bn
+      parentName: L_Arm_02_Bn
+      position: {x: -0.0015326347, y: 1.5916156e-17, z: -1.1368681e-17}
+      rotation: {x: 0.0000000478085, y: 0.000000016709372, z: -0.00000002118759, w: 1}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000005}
+    - name: L_Finger01_01_Bn
+      parentName: L_Arm_03_Bn
+      position: {x: -0.00037498277, y: 0.000055955825, z: -0.00034015914}
+      rotation: {x: -0.78965944, y: 0.03165383, z: 0.12523492, w: 0.5997935}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: L_Finger01_02_Bn
+      parentName: L_Finger01_01_Bn
+      position: {x: -0.00038547808, y: -0.000011762432, z: -2.38592e-10}
+      rotation: {x: -0, y: -0.000000026077032, z: 0.3341755, w: 0.9425109}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
+    - name: L_Finger02_01_Bn
+      parentName: L_Arm_03_Bn
+      position: {x: -0.0007367315, y: -0.00000042292245, z: -0.00020325671}
+      rotation: {x: -0.993261, y: -0.039651617, z: 0.108899824, w: 0.001105049}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: L_Finger02_02_Bn
+      parentName: L_Finger02_01_Bn
+      position: {x: -0.00038501207, y: 4.4337867e-17, z: -2.2737367e-18}
+      rotation: {x: 0.000000023055687, y: -0.000000024294852, z: 0.000000024214383, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: L_Finger03_01_Bn
+      parentName: L_Arm_03_Bn
+      position: {x: -0.00073208485, y: -0.00000012431815, z: 0.00001479143}
+      rotation: {x: -0.993261, y: -0.039651606, z: 0.10889973, w: 0.0011049602}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000001}
+    - name: L_Finger03_02_Bn
+      parentName: L_Finger03_01_Bn
+      position: {x: -0.00038501207, y: 9.208635e-17, z: 2.2737367e-18}
+      rotation: {x: 0.000000095180425, y: -0.00000005993958, z: 0.000000024214383, w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1}
+    - name: L_Finger04_01_Bn
+      parentName: L_Arm_03_Bn
+      position: {x: -0.0007271924, y: -0.00000034887918, z: 0.00023283379}
+      rotation: {x: -0.993261, y: -0.039651603, z: 0.10889976, w: 0.0011050305}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: L_Finger04_02_Bn
+      parentName: L_Finger04_01_Bn
+      position: {x: -0.00038501207, y: -2.0463634e-17, z: -6.821211e-18}
+      rotation: {x: -0.000000011656082, y: 0.000000041019998, z: 0.000000005820765, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Neck_Bn
+      parentName: Spine_Bn
+      position: {x: -0, y: 0.0028887605, z: -0.0000067185183}
+      rotation: {x: 3.8191665e-16, y: -0.000000011920927, z: -0.000000027567145, w: 1}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000001}
+    - name: Head_Bn
+      parentName: Neck_Bn
+      position: {x: -8.5265136e-19, y: 0.0013815053, z: 0.00014149753}
+      rotation: {x: -0.000000023841858, y: 0.00000001788139, z: 0.000000032782552, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+    - name: EyeGlow_Grp
+      parentName: Head_Bn
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Eye_Glow
+      parentName: EyeGlow_Grp
+      position: {x: -0.00038960003, y: 0.0008240002, z: 0.00081839995}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Eye_Glow
+      parentName: EyeGlow_Grp
+      position: {x: 0.0004400001, y: 0.0008960001, z: 0.0008960001}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeGlow_PointLight
+      parentName: EyeGlow_Grp
+      position: {x: -0.00081600016, y: 0.0012879999, z: 0.0016000005}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeGlow_Collider
+      parentName: EyeGlow_Grp
+      position: {x: -0, y: 0.0003391999, z: 0.0018672007}
+      rotation: {x: -0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 0.19415908, y: 0.2082742, z: 0.19415905}
+    - name: Head_Lightning
+      parentName: Head_Bn
+      position: {x: -0, y: 0.00047199999, z: 0.0007439999}
+      rotation: {x: 0.12913586, y: 0, z: -0, w: 0.9916269}
+      scale: {x: 0.43444946, y: 0.40527, z: 0.5177712}
+    - name: Lightning 1
+      parentName: Head_Lightning
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Jaw_Bn
+      parentName: Head_Bn
+      position: {x: -2.842171e-19, y: -0.000034088567, z: 0.00013005208}
+      rotation: {x: 0.000000023841856, y: -0.000000032782552, z: 0.000000002980229, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: L_Ear_Bn
+      parentName: Head_Bn
+      position: {x: -0.00086756016, y: 0.0015540373, z: 0.00005013273}
+      rotation: {x: -0.001596255, y: -0.0038560377, z: -0.38249218, w: 0.92394936}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Eye_Bn
+      parentName: Head_Bn
+      position: {x: -0.00038714785, y: 0.0008568524, z: 0.00052231876}
+      rotation: {x: -0.005012275, y: -0.0062638335, z: -0.000031425676, w: 0.9999679}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: L_LowerLid_Bn
+      parentName: Head_Bn
+      position: {x: -0.00038714785, y: 0.0008568524, z: 0.00052231876}
+      rotation: {x: -0, y: -0, z: 4.2632558e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_UpperLid_Bn
+      parentName: Head_Bn
+      position: {x: -0.00038714785, y: 0.0008568524, z: 0.00052231876}
+      rotation: {x: 0.000000047683717, y: -0.00000001788139, z: 0.0000000029802294, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: R_Ear_Bn
+      parentName: Head_Bn
+      position: {x: 0.00086756016, y: 0.0015540303, z: 0.00005013269}
+      rotation: {x: 0.92394936, y: 0.38249213, z: -0.0038560103, w: 0.0015962657}
+      scale: {x: 1.0000002, y: 1.0000006, z: 1.0000005}
+    - name: R_Eye_Bn
+      parentName: Head_Bn
+      position: {x: 0.00038677553, y: 0.00089974003, z: 0.0005457292}
+      rotation: {x: -3.5527137e-15, y: -0.000000011920928, z: -0.000000037252907, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: R_LowerLid_Bn
+      parentName: Head_Bn
+      position: {x: 0.00038677553, y: 0.00089974003, z: 0.0005457292}
+      rotation: {x: -0, y: -0, z: 4.2632558e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_UpperLid_Bn
+      parentName: Head_Bn
+      position: {x: 0.00038677553, y: 0.0008997412, z: 0.0005457212}
+      rotation: {x: 0.000000023841858, y: 0.0000000029802312, z: 0.000000008940696, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: R_Clavicle_Bn
+      parentName: Spine_Bn
+      position: {x: 0.00029500618, y: 0.0026927888, z: -0.00002127106}
+      rotation: {x: -0.000013072277, y: -0.011476083, z: 0.0011389523, w: 0.99993354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Arm_01_Bn
+      parentName: R_Clavicle_Bn
+      position: {x: 0.0015524303, y: -0.0000030565848, z: -0.000034097546}
+      rotation: {x: 0.0000000353084, y: -0, z: 0.0000000059784773, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: R_Arm_02_Bn
+      parentName: R_Arm_01_Bn
+      position: {x: 0.0019435808, y: -0.000000027653117, z: 5.325707e-11}
+      rotation: {x: -0.00000009513768, y: 9.313238e-10, z: 0.000000020838355, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: R_Arm_03_Bn
+      parentName: R_Arm_02_Bn
+      position: {x: 0.0015326397, y: 0.000000028508186, z: 2.0217973e-10}
+      rotation: {x: 0.000000047945825, y: 0.0000000065192567, z: -0.000000020838256, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Plane_Bn
+      parentName: Root_Bn
+      position: {x: -8.817458e-19, y: 0, z: -0.0072000013}
+      rotation: {x: 1, y: -0, z: -0, w: 0}
+      scale: {x: 1e-12, y: 1e-12, z: 1}
+    - name: VisibilityCollider
+      parentName: Foxy(Clone)
+      position: {x: -0, y: 0.006400002, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.79999995
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
