@@ -93,6 +93,6 @@ public class moveFoxy1 : MonoBehaviour
 
     void LoadDeathScene()
     {
-        //SceneManager.LoadScene("escenaMuerte");
+        SceneManager.LoadScene("Backrooms");
     }
 }

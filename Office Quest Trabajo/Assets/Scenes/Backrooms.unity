@@ -927,10 +927,9 @@ MonoBehaviour:
   - {fileID: 1261084910}
   - {fileID: 1009427018}
   - {fileID: 1344979139}
-  playerTransform: {fileID: 609747857}
   player: {fileID: 609747853}
   followPlayer: 1
-  distanceToFollow: 10
+  distanceToFollow: 5
   CameraPlayer: {fileID: 1835422991}
   CameraJumpscare: {fileID: 889499796}
   teleportRotationE: {x: 0, y: 0, z: 0}

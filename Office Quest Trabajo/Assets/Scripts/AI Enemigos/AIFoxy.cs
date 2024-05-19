@@ -37,7 +37,7 @@ public class AIFoxy : MonoBehaviour
 
     void Start()
     {
-        //SetCameraActiveState(false);
+        SetCameraActiveState(false);
 
         navMeshAgent.destination = destinations[0].transform.position;
         //player = FindObjectOfType<PlayerMovement>().gameObject;
@@ -75,7 +75,7 @@ public class AIFoxy : MonoBehaviour
                 enemyPath();
             }
 
-            if (distanceToPlayer <= 4)
+            if (distanceToPlayer <= 3)
             {
                 PlayerDeath();
             }
