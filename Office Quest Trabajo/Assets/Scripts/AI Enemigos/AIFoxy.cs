@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+ï»¿using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -7,187 +6,208 @@ using UnityEngine.SceneManagement;
 public class AIFoxy : MonoBehaviour
 {
     public NavMeshAgent navMeshAgent;
-
     public Transform[] destinations;
 
-    public Transform playerTransform;
-
-    private int i = 0;
-
+    private int currentDestinationIndex = 0;
     public GameObject player;
 
-    private bool updateOn = true;
 
-    public bool followPlayer;
-    private float distanceToPlayer;
-    public float distanceToFollow = 10;
-    private float fieldOfViewAngle = 135;
+    public float distanceToFollow = 7f;
+    public float distanceToKill = 2f;
+    private float fieldOfViewAngle = 135f;
 
-    // jumpscare
+    // Jumpscare variables
     public Camera CameraPlayer;
     public Camera CameraJumpscare;
 
-    public Vector3 teleportRotationE = new Vector3(0f, 90f, 0f);
-
+    public Vector3 teleportRotationE = new Vector3(0f, 0f, 0f);
     public Transform enemyTransform;
     public Vector3 teleportPositionE;
 
     public Animator animator;
     public bool run = false;
 
+    private Vector3 lastPosition;
+    public Vector3 jumpPosition;
+    private bool isMoving;
+    private bool jumpscare = false;
+
+    public AudioSource audioJumpscare;
+    public AudioClip jumpScreamer;
+    private bool jumpScreamerPlayed = false;
+
     void Start()
     {
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        lastPosition = transform.position;
+
         SetCameraActiveState(false);
 
-        navMeshAgent.destination = destinations[0].transform.position;
-        //player = FindObjectOfType<PlayerMovement>().gameObject;
+        navMeshAgent.destination = destinations[0].position;
+        player = FindObjectOfType<PlayerMovement>().gameObject;
 
         navMeshAgent.speed = 2;
-
     }
-
 
     void Update()
     {
-        if (updateOn == true && navMeshAgent.enabled == true)
+        if (transform.position == jumpPosition)
         {
-
-
-            distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-            if (distanceToPlayer <= distanceToFollow && followPlayer)
-            {
-                followToPlayer();
-                //// Calcula el ángulo entre la dirección hacia adelante del enemigo y la dirección hacia el jugador
-                //Vector3 directionToPlayer = (player.transform.position - transform.position).normalized;
-                //float angleToPlayer = Vector3.Angle(transform.forward, directionToPlayer);
-
-                //// Si el ángulo está dentro del rango de visión
-                //if (angleToPlayer <= fieldOfViewAngle * 0.5f)
-                //{
-                //    // El jugador está dentro del rango de visión, ejecuta la función followToPlayer
-                //    followToPlayer();
-                //}
-            }
-            else
-            {
-
-                navMeshAgent.speed = 2;
-                enemyPath();
-            }
-
-            if (distanceToPlayer <= 3)
-            {
-                PlayerDeath();
-            }
-
-
+            jumpscare = true;
         }
-        // Ejemplo: Teletransportar al jugador y al enemigo a la posición específica cuando se presiona la tecla T
+
+        if (!jumpscare && navMeshAgent.enabled)
+        {
+            CheckMovementStatus();
+            DetectAndChasePlayer();
+        }
+        else
+        {
+            TriggerJumpscare();
+        }
+
         if (Input.GetKeyDown(KeyCode.T))
         {
             ToggleCameraActivation();
             TeleportEntities();
         }
-
     }
 
-    public void enemyPath()
+    void CheckMovementStatus()
     {
-
-        navMeshAgent.destination = destinations[i].position;
-
-        if (Vector3.Distance(transform.position, destinations[i].position) < 3)
+        if (transform.position != lastPosition)
         {
-            navMeshAgent.isStopped = true;
-            StartCoroutine(esperar5segundos());
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+        }
+        lastPosition = transform.position;
 
-            if (destinations[i] != destinations[destinations.Length - 1])
+        if (isMoving)
+        {
+            animator.SetFloat("Blend", 0.5f, 0.5f, Time.deltaTime);
+        }
+        else
+        {
+            animator.SetFloat("Blend", 0f, 0.5f, Time.deltaTime);
+        }
+    }
+
+    void DetectAndChasePlayer()
+    {
+        float distanceToPlayer;
+        Vector3 positionEnemy;
+        Vector3 positionPlayer;
+        positionEnemy = new Vector3(transform.position.x, 0, transform.position.z);
+        positionPlayer = new Vector3(player.transform.position.x, 0, player.transform.position.z);
+        distanceToPlayer = Vector3.Distance(positionEnemy, positionPlayer);
+        //Debug.Log("Distancia al jugador: " + distanceToPlayer);
+        //Debug.Log("Posicion del enemigo: "+ positionEnemy);
+        //Debug.Log("Posicion del jugador: "+ positionPlayer);
+        if (distanceToPlayer <= distanceToKill) {
+            PlayerDeath();
+        }
+        if (distanceToPlayer <= distanceToFollow)
+        {
+            //followToPlayer(positionPlayer);
+            Vector3 directionToPlayer = (positionPlayer - positionEnemy).normalized;
+            float angleToPlayer = Vector3.Angle(transform.forward, directionToPlayer);
+
+            if (angleToPlayer <= fieldOfViewAngle * 0.5f)
             {
-                i++;
+
+                followToPlayer(positionPlayer);
             }
-            else
-            {
-                i = 0;
-            }
+        }
+        else
+        {
+            //Debug.Log("Restableciendo ruta");
+            navMeshAgent.speed = 1.5f;
+            enemyPath();
         }
 
     }
 
-    IEnumerator esperar5segundos()
+    void enemyPath()
+    {
+        if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance < 0.5f)
+        {
+            navMeshAgent.destination = destinations[currentDestinationIndex].position;
+
+            if (Vector3.Distance(transform.position, destinations[currentDestinationIndex].position) < 2)
+            {
+                navMeshAgent.isStopped = true;
+                StartCoroutine(WaitBeforeMoving());
+
+                currentDestinationIndex = (currentDestinationIndex + 1) % destinations.Length;
+            }
+        }
+    }
+
+    IEnumerator WaitBeforeMoving()
     {
         yield return new WaitForSeconds(5f);
         navMeshAgent.isStopped = false;
     }
 
-    public void followToPlayer()
+    void followToPlayer(Vector3 positionPlayer)
     {
+        //Debug.Log("Seguir a jugador");
         animator.SetFloat("Blend", 1f, 0.1f, Time.deltaTime);
-        navMeshAgent.speed = 4;
-        navMeshAgent.destination = player.transform.position;
-
+        navMeshAgent.speed = 2.5f;
+        navMeshAgent.destination = positionPlayer;
     }
 
     void PlayerDeath()
     {
-        Debug.Log("¡El jugador ha muerto!");
-        updateOn = false;
+        navMeshAgent.enabled = false;
+        Debug.Log("Â¡El jugador ha muerto!");
+        //updateOn = false;
         Cursor.lockState = CursorLockMode.None;
         ToggleCameraActivation();
         TeleportEntities();
+    }
 
+    void TriggerJumpscare()
+    {
+        navMeshAgent.enabled = false;
+        animator.SetTrigger("Jumpscare");
+        if (!jumpScreamerPlayed)
+        {
+            Debug.Log("Jumpscare");
+            audioJumpscare.Play();
+            jumpScreamerPlayed = true;
+        }
+        Invoke("LoadDeathScene", 3f);
     }
 
     void ToggleCameraActivation()
     {
-        // Si la cámara inactiva está activa, cambia a la cámara del jugador
-        if (CameraJumpscare.gameObject.activeSelf)
-        {
-            SwitchToPlayerCamera();
-        }
-        else
-        {
-            // Cambia a la cámara inactiva
-            SetCameraActiveState(!CameraJumpscare.gameObject.activeSelf);
-        }
+        SetCameraActiveState(!CameraJumpscare.gameObject.activeSelf);
     }
 
     void SetCameraActiveState(bool isActive)
     {
-        // Activa o desactiva la cámara inactiva según el estado proporcionado
         CameraJumpscare.gameObject.SetActive(isActive);
-
-        // Activa o desactiva la cámara del jugador según el estado contrario
         CameraPlayer.gameObject.SetActive(!isActive);
-
-        // Muestra un mensaje en la consola para confirmar el cambio
-        if (isActive)
-        {
-            Debug.Log("Cámara activada y cambiada a la cámara inactiva.");
-        }
-        else
-        {
-            Debug.Log("Cámara inactiva desactivada y cambiada a la cámara del jugador.");
-        }
     }
-
-    void SwitchToPlayerCamera()
-    {
-        // Desactiva la cámara inactiva
-        CameraJumpscare.gameObject.SetActive(false);
-
-        // Activa la cámara del jugador
-        CameraPlayer.gameObject.SetActive(true);
-    }
-
 
     void TeleportEntities()
     {
-        // Teletransportar al enemigo a la posición específica
         if (enemyTransform != null)
         {
             enemyTransform.rotation = Quaternion.Euler(teleportRotationE);
             enemyTransform.position = teleportPositionE;
-            Debug.Log("El enemigo se ha teletransportado a la posición específica.");
+            Debug.Log("El enemigo se ha teletransportado a la posiciÃ³n especÃ­fica.");
+            navMeshAgent.enabled = false;
         }
     }
+
+    void LoadDeathScene()
+    {
+        SceneManager.LoadScene("Backrooms");
+    }
 }
+
