@@ -33,8 +33,12 @@ public class AIFoxy : MonoBehaviour
     private bool jumpscare = false;
 
     public AudioSource audioJumpscare;
+    public AudioSource audioPasos;
+    public AudioSource audioCorrer;
     public AudioClip jumpScreamer;
     private bool jumpScreamerPlayed = false;
+    private bool pasosPlayed = false;
+    private bool correrPlayed = false;
 
     void Start()
     {
@@ -71,6 +75,7 @@ public class AIFoxy : MonoBehaviour
             ToggleCameraActivation();
             TeleportEntities();
         }
+
     }
 
     void CheckMovementStatus()
@@ -88,10 +93,21 @@ public class AIFoxy : MonoBehaviour
         if (isMoving)
         {
             animator.SetFloat("Blend", 0.5f, 0.5f, Time.deltaTime);
+            if(pasosPlayed == false)
+            {
+                pasosPlayed = true;
+                audioPasos.loop = true;
+                audioPasos.Play();
+            }
+            
         }
         else
         {
             animator.SetFloat("Blend", 0f, 0.5f, Time.deltaTime);
+            audioCorrer.Stop();
+            audioPasos.Stop();
+            pasosPlayed = false;
+            correrPlayed = false;
         }
     }
 
@@ -123,8 +139,10 @@ public class AIFoxy : MonoBehaviour
         }
         else
         {
+            audioCorrer.Stop();
+            correrPlayed = false;
             //Debug.Log("Restableciendo ruta");
-            navMeshAgent.speed = 1.5f;
+            navMeshAgent.speed = 2f;
             enemyPath();
         }
 
@@ -156,8 +174,17 @@ public class AIFoxy : MonoBehaviour
     {
         //Debug.Log("Seguir a jugador");
         animator.SetFloat("Blend", 1f, 0.1f, Time.deltaTime);
-        navMeshAgent.speed = 2.5f;
+        navMeshAgent.speed = 3f;
         navMeshAgent.destination = positionPlayer;
+        audioPasos.Stop();
+        pasosPlayed = false;
+        if(correrPlayed == false)
+        {
+            correrPlayed = true;
+            audioCorrer.loop = true;
+            audioCorrer.Play();
+        }
+        
     }
 
     void PlayerDeath()
@@ -179,6 +206,8 @@ public class AIFoxy : MonoBehaviour
             Debug.Log("Jumpscare");
             audioJumpscare.Play();
             jumpScreamerPlayed = true;
+            audioPasos.Stop();
+            audioCorrer.Stop();
         }
         Invoke("LoadDeathScene", 3f);
     }
