@@ -174,7 +174,7 @@ public class AIFoxy : MonoBehaviour
     {
         //Debug.Log("Seguir a jugador");
         animator.SetFloat("Blend", 1f, 0.1f, Time.deltaTime);
-        navMeshAgent.speed = 3f;
+        navMeshAgent.speed = 2.7f;
         navMeshAgent.destination = positionPlayer;
         audioPasos.Stop();
         pasosPlayed = false;

@@ -26,6 +26,9 @@ public class PrimeraCarga : MonoBehaviour
         tiempoRestante = 100;
         PlayerPrefs.SetInt("TiempoRestante", tiempoRestante);
 
+        PlayerPrefs.SetInt("2DCompletado", 0);
+
+
         digito1 = Random.Range(0, 10);
         digito2 = Random.Range(0, 10);
         digito3 = Random.Range(0, 10);

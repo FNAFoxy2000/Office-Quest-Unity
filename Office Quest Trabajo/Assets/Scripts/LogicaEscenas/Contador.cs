@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Contador : MonoBehaviour
 {
@@ -54,6 +55,7 @@ public void JuegoPerdido(int restar)
             // Realizar alguna acci�n cuando el tiempo se acabe
             Debug.Log("Tiempo agotado");
             CancelInvoke(); // Detiene la llamada repetida a la funci�n RestarTiempo
+            //SceneManager.LoadScene("EscenaMuerte");
         }
 
         contador.text = tiempoRestante.ToString();
