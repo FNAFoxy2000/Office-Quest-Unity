@@ -23,7 +23,7 @@ public class PrimeraCarga : MonoBehaviour
         juegosCompletados = 0;
         PlayerPrefs.SetInt("JuegosCompletados", juegosCompletados);
 
-        tiempoRestante = 100;
+        tiempoRestante = 1000;
         PlayerPrefs.SetInt("TiempoRestante", tiempoRestante);
 
         PlayerPrefs.SetInt("2DCompletado", 0);

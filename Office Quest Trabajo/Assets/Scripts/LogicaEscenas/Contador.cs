@@ -48,7 +48,7 @@ public void JuegoPerdido(int restar)
     void RestarTiempo()
     {
         tiempoRestante -= 1; // Resta 1 segundo al tiempo restante
-        Debug.Log("Tiempo restante: " + tiempoRestante);
+        //Debug.Log("Tiempo restante: " + tiempoRestante);
 
         if (tiempoRestante <= 0)
         {
